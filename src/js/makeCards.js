@@ -3,7 +3,7 @@ import countryCard from '../templates/countryCard.hbs';
 
 const input = document.getElementById('search-box');
 
-input.addEventListener('input', onSearch);
+input.addEventListener('input', _.debounce(onSearch, 300));
 
 function onSearch(e) {
   e.preventDefault();
