@@ -5,8 +5,6 @@ import debounce from 'lodash/debounce';
 const DEBOUNCE_DELAY = 300;
 
 const input = document.getElementById('search-box');
-const coutriesList = document.querySelector('.country-list');
-const countryInfo = document.querySelector('.country-info');
 
 input.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 

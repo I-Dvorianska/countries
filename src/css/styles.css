@@ -16,3 +16,11 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-flag {
+  display: flex;
+}
+
+.country-name {
+  margin-left: 20px;
+}

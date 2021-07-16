@@ -1,5 +1,8 @@
 <div class="country-card">
-    <h1 class="country-name">{{0.name}}</h1>
+    <div class="country-flag">
+        <img src="{{0.flag}}" alt="flag of {{0.name}}" width="80px">
+        <h1 class="country-name">{{0.name}}</h1>
+    </div>
 
     <ul class="country-info">
         <li>Capital: {{0.capital}}</li>
@@ -8,5 +11,5 @@
             
         </li>
     </ul>
-    <img src="{{0.flag}}" alt="flag of {{0.name}}">
+    
 </div>
