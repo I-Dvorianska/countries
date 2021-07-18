@@ -1,5 +1,4 @@
 import fetchCountries from './fetchCountries';
-import countries from '../templates/countriesList.hbs';
 import debounce from 'lodash/debounce';
 
 const DEBOUNCE_DELAY = 300;
@@ -17,4 +16,8 @@ function onSearch(e) {
       `https://restcountries.eu/rest/v2/name/${inputValue}?fields=name;capital;population;flag;languages`,
     );
   }
+  // if (inputValue.length === 0) {
+  //   coutriesList.innerHTML = '';
+  //   countryInfo.innerHTML = '';
+  // }
 }
