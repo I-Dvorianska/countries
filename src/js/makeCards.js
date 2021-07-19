@@ -22,9 +22,11 @@ function onSearch(e) {
     return;
   }
 
-  fetchCountries(inputValue)
-    .then(markup)
-    .catch(error => Notify.failure('Oops, there is no country with that name'));
+  fetchCountries(inputValue).then(r => {
+    console.log(r);
+  });
+  // .then(markup)
+  // .catch(error => Notify.failure('Oops, there is no country with that name'));
 }
 
 function markup(country) {
