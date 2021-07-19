@@ -7,8 +7,10 @@
     <ul class="country-info">
         <li>Capital: {{0.capital}}</li>
         <li>Population: {{0.population}}</li>
-        <li>Languages:
-            
+        <li>Languages: 
+            <p>
+                {{#each this.languages}} {{name}}, {{/each}}</p>
+            </p>
         </li>
     </ul>
     
